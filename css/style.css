@@ -38,6 +38,9 @@ a {
 
 .btn {
   border: 0; }
+  .btn-white {
+    background-color: #ffffff;
+    padding: 1rem; }
 
 .header {
   background-color: #F4BA0D; }

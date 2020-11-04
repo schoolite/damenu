@@ -1,4 +1,8 @@
 .btn{
     border: 0;
     
+    &-white {
+        background-color: $white;
+        padding: 1rem;
+    }
 }
