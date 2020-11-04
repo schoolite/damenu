@@ -20,17 +20,16 @@
                         </div>
                     </nav>
 
-                    <div class="header-content">
+                    <div class="header-content header-content-mini">
                         <div class="container">
-                                <h1 class="header-title">Make your menu/timetable and share with others</h1>
+                                <h1 class="header-title">Add menu</h1>
 
-                                <a href="addmenu.php" class="btn btn-white">Make a menu</a>
                         </div>
                     </div>
             
             </header>
 
-            
+         
     </div>
 </body>
 </html>
