@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Damenu</h1>
+    <div id="app">
+
+            <header class="header">
+                
+                    <nav class="navbar">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">
+                                <img src="img/logo.svg" alt="logo" >
+                            </a>
+                        </div>
+                    </nav>
+            
+            </header>
+
+    </div>
 </body>
 </html>
