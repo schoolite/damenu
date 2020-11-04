@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2020 at 10:36 AM
+-- Generation Time: Nov 04, 2020 at 11:25 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `food` (
   `id` int(11) NOT NULL,
   `name` varchar(225) NOT NULL,
-  `category_id` int(11) NOT NULL,
+  `category_id` enum('breakfast','lunch','dinner','dessert','brunch') NOT NULL,
   `timetable_id` int(11) NOT NULL,
-  `days` varchar(225) NOT NULL
+  `days` enum('monday','tuesday','wednesday','thursday','friday','saturday','sunday') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
