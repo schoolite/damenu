@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.text-center {
+  text-align: center !important; }
+
 *,
 *::before,
 *::after {
@@ -37,7 +40,14 @@ a {
   text-decoration: none; }
 
 .btn {
-  border: 0; }
+  border: 0;
+  background-color: #fafafa;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem; }
+
+.days-list .day a.active {
+  font-size: 3rem;
+  color: #222222; }
 
 .header {
   background-color: #F4BA0D; }
@@ -49,11 +59,13 @@ a {
       height: 30vh; }
   .header-title {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 3rem; }
     @media (min-width: 48em) {
       .header-title {
         width: 70%;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        margin-bottom: 3rem; } }
 
 .navbar {
   height: 100px;

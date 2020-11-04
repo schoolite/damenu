@@ -23,8 +23,9 @@
                     <div class="header-content">
                         <div class="container">
                                 <h1 class="header-title">Make your menu/timetable and share with others</h1>
-
+                            <div class="text-center">
                                 <a href="addmenu.php" class="btn btn-white">Make a menu</a>
+                            </div>
                         </div>
                     </div>
             

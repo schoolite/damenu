@@ -1,0 +1,15 @@
+.days{
+    &-list{
+        
+        .day{
+            a{
+                &.active{
+                    font-size: 3rem;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+
+}
