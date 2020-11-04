@@ -19,9 +19,18 @@
                             </a>
                         </div>
                     </nav>
+
+                    <div class="header-content">
+                        <div class="container">
+                                <h1 class="header-title">Make your menu/timetable and share with others</h1>
+
+                                <a href="#" class="btn btn-white">Make a menu</a>
+                        </div>
+                    </div>
             
             </header>
 
+            <h1>Da meny</h1>
     </div>
 </body>
 </html>

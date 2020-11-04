@@ -32,9 +32,40 @@ p {
   font-size: 16px;
   font-weight: 400; }
 
+a {
+  color: #333333;
+  text-decoration: none; }
+
+.btn {
+  border: 0; }
+
 .header {
   background-color: #F4BA0D; }
+  .header-content {
+    height: 50vh;
+    display: grid;
+    place-items: center; }
+    .header-content.header-content-mini {
+      height: 30vh; }
+  .header-title {
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 48em) {
+      .header-title {
+        width: 70%;
+        margin: 0 auto; } }
+
+.navbar {
+  height: 100px;
+  padding: 2rem 0; }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem; }
+  @media (min-width: 62em) {
+    .container {
+      max-width: 900px; } }
+  @media (min-width: 75em) {
+    .container {
+      max-width: 1200px; } }

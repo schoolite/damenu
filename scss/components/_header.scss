@@ -1,3 +1,23 @@
 .header{
     background-color: $primary;
+    
+    &-content{
+        height: $header-height;
+        display: grid;
+        place-items: center;
+
+        &.header-content-mini{
+            height: $header-height-mini;
+        }
+
+    }   
+    &-title{
+        width: 100%;
+        text-align: center;
+
+        @include respond(tab){
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
 }
