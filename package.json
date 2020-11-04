@@ -1,0 +1,27 @@
+{
+  "name": "damenu",
+  "version": "1.0.0",
+  "description": "Food titmetable menu made publicly available",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schoolite/damenu.git"
+  },
+  "keywords": [
+    "food",
+    "menu",
+    "timetable"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schoolite/damenu/issues"
+  },
+  "homepage": "https://github.com/schoolite/damenu#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
