@@ -1,4 +1,6 @@
 .btn{
     border: 0;
-    
+    background-color: $light;
+    padding: $input-padding-y $input-padding-x;
+    border-radius: $input-border-radius;
 }
