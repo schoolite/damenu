@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html prefix="og: https://ogp.me/ns#">
         <title>Da menu</title>
+        <meta property="og:title" content="Da Menu"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://damenu.alabamustapha.com/"/>
+        <meta property="og:image" content="img/logo.svg"/>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
