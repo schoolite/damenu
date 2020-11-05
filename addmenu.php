@@ -22,7 +22,7 @@
 
                     <div class="header-content header-content-mini">
                         <div class="container">
-                                <h1 class="header-title">Add menu</h1>
+                                <h1 class="header-title">Add timetable</h1>
 
                         </div>
                     </div>
@@ -77,8 +77,8 @@
                                             </select>
                                         </div>
     
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for monday">
+                                        <div class="form-group form-group-2">
+                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what's for breakfast">
                                         </div>  
 
                                     </div>
@@ -120,7 +120,7 @@
 
                                     <input type="hidden" name="day" value="1">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="3">
+                                       
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>
@@ -136,7 +136,7 @@
                                         </div>  
 
                                     </div>
-                                        <a href="#" class="btn-link add-meal" data-for="3">Add meal </a>
+                                    <a href="#" class="btn-link add-meal" data-for="3">Add meal </a>
 
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </form>
@@ -145,9 +145,9 @@
                                 <!-- meal-day = 4 is for thursday -->
                                 <form action="#" method="post">
 
-                                    <input type="hidden" name="day" value="1">
+                                    <input type="hidden" name="day" value="4">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="4">
+                                      
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>
@@ -163,7 +163,7 @@
                                         </div>  
 
                                     </div>
-                                        <a href="#" class="btn-link add-meal" data-for="4">Add meal </a>
+                                    <a href="#" class="btn-link add-meal" data-for="4">Add meal </a>
 
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </form>
@@ -172,9 +172,9 @@
                                 <!-- meal-day = 5 is for friday-->
                                 <form action="#" method="post">
 
-                                    <input type="hidden" name="day" value="1">
+                                    <input type="hidden" name="day" value="5">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="5">
+                                      
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>
@@ -189,8 +189,8 @@
                                             <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for friday">
                                         </div>  
 
-                                        <a href="#" class="btn-link add-meal" data-for="5">Add meal </a>
                                     </div>
+                                    <a href="#" class="btn-link add-meal" data-for="5">Add meal </a>
 
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </form>
@@ -199,9 +199,9 @@
                                 <!-- meal-day = 6 is for saturday -->
                                 <form action="#" method="post">
 
-                                    <input type="hidden" name="day" value="1">
+                                    <input type="hidden" name="day" value="6">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="6">
+                                        
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>
@@ -226,9 +226,8 @@
                                 <!-- meal-day = 7 is for sundary -->
                                 <form action="#" method="post">
 
-                                    <input type="hidden" name="day" value="1">
+                                    <input type="hidden" name="day" value="7">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="7">
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>

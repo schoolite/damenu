@@ -4,10 +4,21 @@
     &-content{
         height: $header-height;
         display: grid;
-        place-items: center;
+        place-items: center; 
+        position: absolute;  
 
         &.header-content-mini{
-            height: $header-height-mini;
+            height: $header-height-mini;  
+            font-size: 1.6rem;
+            padding-top: 5rem;
+            font-weight: 400;
+            font-size: 3.6rem;
+            line-height: 5.4rem;
+            text-align: center;
+            text-transform: uppercase;
+            word-spacing: .5rem;
+            letter-spacing: .5rem;
+            position: relative;    
         }
 
     }   
