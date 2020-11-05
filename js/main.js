@@ -29,6 +29,10 @@ window.addEventListener('load', function(){
     // current Day selected in the form
     let currentDayForm  = 1;
 
+    // tracking nodeposition for form elements
+    let nodeLevel = 3;
+
+
 
     // function to show /hide each meal day
     const showCurrentMealDay = (day) => {
@@ -61,7 +65,7 @@ window.addEventListener('load', function(){
 
             showCurrentMealDay(currentDayForm);
             
-
+            nodeLevel = 3;
 
         });
     });
@@ -113,7 +117,6 @@ window.addEventListener('load', function(){
         return (count > 5) ? false : true;
     };
 
-    let nodeLevel = 3;
 
     addMealBtn.forEach(btn => {
 
@@ -140,8 +143,8 @@ window.addEventListener('load', function(){
             
            
 
-            targetFormElement.after(el)
-            
+            targetFormElement.after(el);     
+            console.log(nodeLevel);
             
         });
 

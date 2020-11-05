@@ -90,10 +90,9 @@
                             <div class="meal-day " data-meal-day="2">
                                 <!-- meal-day = 2 is for tuesday -->
                                 <form action="#" method="post">
-
-                                    <input type="hidden" name="day" value="1">
+                                    
+                                    <input type="hidden" name="day" value="2">
                                     <div class="form-group-inline">
-                                        <input type="hidden" name="day" value="2">
                                         <div class="form-group">
                                             <select name="category" id="category" class="form-control">
                                                 <option value="1">Breakfast</option>
@@ -118,7 +117,7 @@
                                 <!-- meal-day = 3 is for wednesday -->
                                 <form action="#" method="post">
 
-                                    <input type="hidden" name="day" value="1">
+                                    <input type="hidden" name="day" value="3">
                                     <div class="form-group-inline">
                                        
                                         <div class="form-group">
