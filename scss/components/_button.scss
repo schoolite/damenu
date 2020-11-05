@@ -1,23 +1,44 @@
 .btn{
-    border: 0;
-    background-color: $light;
-    padding: $input-padding-y $input-padding-x;
-    border-radius: $input-border-radius;
-    font-size: 1rem;
-   
-    
+    &-full {
+        display: inline-block;
+        -webkit-border-radius: $input-border-radius ;
+        -moz-border-radius: $input-border-radius ;
+        -ms-border-radius: $input-border-radius ;
+        -o-border-radius: $input-border-radius ;
+        border: 0;
+        padding: $input-padding-y $input-padding-x;
+        border-radius: $input-border-radius;
+        font-size: 1rem;
+        cursor: pointer;
 
-    &-primary {
-        position: relative;
-        display: block;
-        padding: .8rem 2.5rem;
-        background-color: $primary;
-        // margin: .5rem 2rem;
-        transition: all .2s;
+        &-primary{
+            background-color: $light;
+            color: $primary;
 
-        &:hover,
-        &:active{
-            transform: translateY(-.2rem)
+            &:hover,
+            &:active {
+                transform: translateY(-.2rem);
+                -webkit-transform: translateY(-.2rem);
+                -moz-transform: translateY(-.2rem);
+                -ms-transform: translateY(-.2rem);
+                -o-transform: translateY(-.2rem);
+            }
+        }
+
+        &-secondary{
+            background-color: $primary;
+            color: $light;
+
+            &:hover,
+            &:active {
+                transform: translateY(-.2rem);
+                -webkit-transform: translateY(-.2rem);
+                -moz-transform: translateY(-.2rem);
+                -ms-transform: translateY(-.2rem);
+                -o-transform: translateY(-.2rem);
+            }
         }
     }
 }
+
+

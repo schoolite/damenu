@@ -1,8 +1,9 @@
 .header{
     background-color: $primary;
-    
+    height: calc(#{$header-height} + #{$navbar-height});
     &-content{
         height: $header-height;
+        width: 100%;
         display: grid;
         place-items: center; 
         position: absolute;  

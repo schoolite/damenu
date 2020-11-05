@@ -9,6 +9,7 @@
 
 
 @import 'components/button';
+@import 'components/explore';
 @import 'components/days';
 @import 'components/header';
 @import 'components/form';
@@ -16,4 +17,6 @@
 @import 'components/nav';
 
 
-@import 'layouts/container';  
+@import 'layouts/container';
+
+@import 'pages/home';
