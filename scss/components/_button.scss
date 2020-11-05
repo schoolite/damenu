@@ -1,4 +1,18 @@
 .btn{
-    border: 0;
-    
+    display: flex;
+    justify-content: center;
+}
+
+.btn-full {
+    margin: 7.5rem 0;
+    text-align: center;
+    border: .06rem solid transparent;
+    background-color: $primary;
+    color: $secondary;
+    padding: .5rem 1rem;
+    border-radius: $input-border-radius ;
+    -webkit-border-radius: $input-border-radius ;
+    -moz-border-radius: $input-border-radius ;
+    -ms-border-radius: $input-border-radius ;
+    -o-border-radius: $input-border-radius ;
 }
