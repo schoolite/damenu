@@ -14,7 +14,7 @@
                 
                     <nav class="navbar">
                         <div class="container">
-                            <a href="#" class="navbar-brand">
+                            <a href="index.php" class="navbar-brand">
                                 <img src="img/logo.svg" alt="logo" >
                             </a>
                         </div>
