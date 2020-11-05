@@ -29,6 +29,10 @@ window.addEventListener('load', function(){
     // current Day selected in the form
     let currentDayForm  = 1;
 
+    // tracking nodeposition for form elements
+    let nodeLevel = 3;
+
+
 
     // function to show /hide each meal day
     const showCurrentMealDay = (day) => {
@@ -61,7 +65,7 @@ window.addEventListener('load', function(){
 
             showCurrentMealDay(currentDayForm);
             
-
+            nodeLevel = 3;
 
         });
     });
@@ -100,19 +104,19 @@ window.addEventListener('load', function(){
 
     const formCountChecker = function(parentTracker){
         let forms = selectAll('.form-group-inline');
-        let count = 0;
+        let count = 1;
         forms.forEach(function(form){
             if(form.parentNode.parentNode.dataset.mealDay == parentTracker){
-               console.log(form);
+              count++;
             }
            
         })
-        // console.log(count);
 
-        return (count == 5) ? false : true;
+      
+
+        return (count > 5) ? false : true;
     };
 
-    let nodeLevel = 3;
 
     addMealBtn.forEach(btn => {
 
@@ -130,15 +134,17 @@ window.addEventListener('load', function(){
             let targetFormElement = mealELement.childNodes[3].childNodes[nodeLevel];
             nodeLevel++;
             // console.log(mealELement.childNodes[3].childNodes);
+            
             let el = document.createElement('div');
-            el.classList.add('form-group-inline');
-
-            buildForm(el, parentTracker);
+            if(formCountChecker(parentTracker)){
+                el.classList.add('form-group-inline');
+                buildForm(el, parentTracker);
+            }
             
-            formCountChecker(parentTracker);
+           
 
-            targetFormElement.after(el)
-            
+            targetFormElement.after(el);     
+            console.log(nodeLevel);
             
         });
 
