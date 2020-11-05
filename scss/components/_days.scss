@@ -1,0 +1,26 @@
+.days{
+
+    &-list{
+        margin: 3rem 0;
+        
+        .day{
+            list-style: none; 
+            display: inline-block;
+            margin-right: 2rem;
+            
+            position: relative;
+
+            a{
+                margin: 0 .05rem;
+
+                &.active{
+                    font-size: 2rem;
+                    color: $black;
+                    text-align: center;
+                }
+
+            }
+
+        }
+    }
+}

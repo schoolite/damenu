@@ -1,9 +1,11 @@
 .explore-menu {
+    margin-bottom: 3rem;
 
     &-detail {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+        margin-bottom: 2rem;
     }
 
     &-details {

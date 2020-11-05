@@ -1,18 +1,44 @@
 .btn{
-    display: flex;
-    justify-content: center;
+    &-full {
+        display: inline-block;
+        -webkit-border-radius: $input-border-radius ;
+        -moz-border-radius: $input-border-radius ;
+        -ms-border-radius: $input-border-radius ;
+        -o-border-radius: $input-border-radius ;
+        border: 0;
+        padding: $input-padding-y $input-padding-x;
+        border-radius: $input-border-radius;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &-primary{
+            background-color: $light;
+            color: $primary;
+
+            &:hover,
+            &:active {
+                transform: translateY(-.2rem);
+                -webkit-transform: translateY(-.2rem);
+                -moz-transform: translateY(-.2rem);
+                -ms-transform: translateY(-.2rem);
+                -o-transform: translateY(-.2rem);
+            }
+        }
+
+        &-secondary{
+            background-color: $primary;
+            color: $light;
+
+            &:hover,
+            &:active {
+                transform: translateY(-.2rem);
+                -webkit-transform: translateY(-.2rem);
+                -moz-transform: translateY(-.2rem);
+                -ms-transform: translateY(-.2rem);
+                -o-transform: translateY(-.2rem);
+            }
+        }
+    }
 }
 
-.btn-full {
-    margin: 7.5rem 0;
-    text-align: center;
-    border: .06rem solid transparent;
-    background-color: $primary;
-    color: $secondary;
-    padding: .5rem 1rem;
-    border-radius: $input-border-radius ;
-    -webkit-border-radius: $input-border-radius ;
-    -moz-border-radius: $input-border-radius ;
-    -ms-border-radius: $input-border-radius ;
-    -o-border-radius: $input-border-radius ;
-}
+
