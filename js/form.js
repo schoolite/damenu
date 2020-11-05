@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e){
 async function postData(formattedFormData){
 
     // get data from the form
-    const response = await fetch('php/functions/form.php',{
+    const response = await fetch('/php/functions/form',{
         method: 'POST',
         body: formattedFormData
     });

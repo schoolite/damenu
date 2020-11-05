@@ -13,15 +13,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-<<<<<<< HEAD
-            <header class="header"> 
-                
-                    <nav class="navbar">
-                        <div class="container">
-                            <a href="index.php" class="navbar-brand">
-                                <img src="img/logo.svg" alt="logo" >
-                            </a>
-=======
     <body>
 
         <div id="app">
@@ -42,7 +33,6 @@
 
                         <div class="u-center">
                             <a href="addmenu.php" class="btn-full btn-full-primary">Make a menu</a>
->>>>>>> 1f0311482c7af9c065f324bda8394e63d881a343
                         </div>
                     </div>
                 </div>

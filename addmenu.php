@@ -89,13 +89,8 @@
                             </div>
                             <div class="meal-day " data-meal-day="2">
                                 <!-- meal-day = 2 is for tuesday -->
-<<<<<<< HEAD
-                                <form action="#" method="post" class="addMeals">
-
-=======
                                 <form action="#" method="post">
                                     
->>>>>>> 1f0311482c7af9c065f324bda8394e63d881a343
                                     <input type="hidden" name="day" value="2">
                                     <div class="form-group-inline">
                                         <div class="form-group">
