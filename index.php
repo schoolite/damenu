@@ -8,7 +8,8 @@
         <meta property="og:title" content="Da Menu"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://damenu.alabamustapha.com/"/>
-        <meta property="og:image" content="img/logo.svg"/>
+        <meta property="og:image" content="https://damenu.alabamustapha.com/"/>
+        <meta property="og:description" content="Food Menu App"/>
 
         <link rel="stylesheet" href="css/style.css">
     </head>

@@ -102,7 +102,11 @@ a {
   .explore-menu-header {
     color: #2B1E28;
     text-align: center;
-    padding: 2rem 0; }
+    margin: 4rem 0; }
+    .explore-menu-header::before {
+      border: 2rem solid #2B1E28; }
+    .explore-menu-header::before {
+      border: 2rem solid #2B1E28; }
   .explore-menu-img {
     height: 20px;
     width: 20px;
