@@ -10,7 +10,7 @@
 <body>
     <div id="app">
 
-            <header class="header">
+            <header class="header"> 
                 
                     <nav class="navbar">
                         <div class="container">
