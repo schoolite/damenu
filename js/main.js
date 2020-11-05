@@ -88,7 +88,7 @@ window.addEventListener('load', function(){
                     <option value="1">Breakfast</option>
                     <option value="2">Launch</option>
                     <option value="3">Dinner</option>
-                    <option value="4">Braunch</option>
+                    <option value="4">Brunch</option>
                     <option value="5">Desert</option>
                 </select>
             </div>
