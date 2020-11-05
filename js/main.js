@@ -100,16 +100,17 @@ window.addEventListener('load', function(){
 
     const formCountChecker = function(parentTracker){
         let forms = selectAll('.form-group-inline');
-        let count = 0;
+        let count = 1;
         forms.forEach(function(form){
             if(form.parentNode.parentNode.dataset.mealDay == parentTracker){
-               console.log(form);
+              count++;
             }
            
         })
-        // console.log(count);
 
-        return (count == 5) ? false : true;
+      
+
+        return (count > 5) ? false : true;
     };
 
     let nodeLevel = 3;
@@ -130,12 +131,14 @@ window.addEventListener('load', function(){
             let targetFormElement = mealELement.childNodes[3].childNodes[nodeLevel];
             nodeLevel++;
             // console.log(mealELement.childNodes[3].childNodes);
-            let el = document.createElement('div');
-            el.classList.add('form-group-inline');
-
-            buildForm(el, parentTracker);
             
-            formCountChecker(parentTracker);
+            let el = document.createElement('div');
+            if(formCountChecker(parentTracker)){
+                el.classList.add('form-group-inline');
+                buildForm(el, parentTracker);
+            }
+            
+           
 
             targetFormElement.after(el)
             
