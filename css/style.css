@@ -2,6 +2,14 @@
 .text-center {
   text-align: center !important; }
 
+.d-block,
+.show {
+  display: block !important; }
+
+.d-none,
+.hide {
+  display: none !important; }
+
 *,
 *::before,
 *::after {
@@ -66,6 +74,9 @@ a {
         width: 70%;
         margin: 0 auto;
         margin-bottom: 3rem; } }
+
+.meal-day {
+  display: none; }
 
 .navbar {
   height: 100px;
