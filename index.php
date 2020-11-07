@@ -13,7 +13,9 @@
         <meta property="og:title" content="Da Menu"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://damenu.alabamustapha.com/"/>
-        <meta property="og:image" content="img/logo.svg"/>
+        <meta property="og:image" content="./img/logo.svg"/>
+        <meta property="og:image:secure_url" content="https://damenu.alabamustapha.com/img/logo.svg">
+        <meta property="og:description" content="Food titmetable menu made publicly available"/>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
