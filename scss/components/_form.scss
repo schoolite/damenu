@@ -3,14 +3,7 @@
     &-group {
         display: block;
         position: relative;
-
-        &-inline{
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        
-       
+        margin-bottom: 1.2rem;
     }
 
     &-control{
@@ -18,12 +11,13 @@
         border-radius: calc(#{$input-border-radius} / 2);
         display: block;
         border: 1px solid rgba(black, .1);
+        width: 30%;
     }
 }
-form > .add-meal{
-    margin-top: 1rem;
-    display: block;
-}
-form > button[type=submit]{
-    margin-top: 3rem;
-}
+// form > .add-meal{
+//     margin-top: 1rem;
+//     display: block;
+// }
+// form > button[type=submit]{
+//     margin-top: 3rem;
+// }

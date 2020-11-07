@@ -1,5 +1,9 @@
 .meal{
     &-day{
         display: none;
+
+        h2{
+            margin-bottom: 1rem;
+        }
     }
 }

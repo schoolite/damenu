@@ -1,3 +1,7 @@
+<?php 
+    require_once('php/includes/config.php'); 
+    require_once('php/classes/database.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,216 +41,161 @@
                     <div class="container">
                         <ul class="days-list">
                             <li class="day">
-                                <a href="# " class="active item" data-day="1">Monday</a>
+                                <a href="# " class="active item" data-day="mon">Monday</a>
                             </li>
                         
                             <li class="day">
-                                <a href="#" class="item" data-day="2">Tuesday</a>
+                                <a href="#" class="item" data-day="tue">Tuesday</a>
                             </li>
                             <li class="day">
-                                <a href="#" class="item" data-day="3">Wednesday</a>
+                                <a href="#" class="item" data-day="wed">Wednesday</a>
                             </li>
                             <li class="day">
-                                <a href="#" class="item" data-day="4">Thursday</a>
+                                <a href="#" class="item" data-day="thur">Thursday</a>
                             </li>
                             <li class="day">
-                                <a href="#" class="item" data-day="5">Friday</a>
+                                <a href="#" class="item" data-day="fri">Friday</a>
                             </li>
                             <li class="day">
-                                <a href="#" class="item" data-day="6">Saturday</a>
+                                <a href="#" class="item" data-day="sat">Saturday</a>
                             </li>
                             <li class="day">
-                                <a href="#" class="item" data-day="7">Sunday</a>
+                                <a href="#" class="item" data-day="sun">Sunday</a>
                             </li>
                         </ul>
 
                         <div class="meal">
-                            <div class="meal-day show" data-meal-day="1">
-                                <!-- meal-day = 1 is for monday -->
-                                <form action="php/functions/form.php" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="1">
-                                    <div class="form-group-inline">
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group form-group-2">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what's for breakfast">
-                                        </div>  
-
+                            <form action="#" method="POST" id="timeTable" class="addMeal">
+                                <div class="meal-day show" data-day="mon">
+                                    <h2>Monday</h2>
+                                    <div class="form-group">
+                                        <input type="text" name="mon_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="mon_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="mon_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="mon_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="mon_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
+                                    </div>  
+                                </div>
+                                <div class="meal-day" data-day="tue">
+                                   <h2>Tuesday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="tue_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="tue_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="tue_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="tue_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="tue_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
+                                    </div>  
+                                </div>
+                                <div class="meal-day" data-day="wed">
+                                   <h2>Wednessday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="wed_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="wed_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="wed_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="wed_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="wed_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
                                     </div>
-                                    <a href="#" class="btn-link add-meal" data-for="1">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day " data-meal-day="2">
-                                <!-- meal-day = 2 is for tuesday -->
-                                <form action="#" method="post">
-                                    
-                                    <input type="hidden" name="day" value="2">
-                                    <div class="form-group-inline">
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for tuesday">
-                                        </div>  
-
+                                </div>
+                                <div class="meal-day" data-day="thur">
+                                   <h2>Thursday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="thur_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="thur_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="thur_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="thur_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="thur_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
                                     </div>
-                                    <a href="#" class="btn-link add-meal" data-for="2">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day" data-meal-day="3">
-                                <!-- meal-day = 3 is for wednesday -->
-                                <form action="#" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="3">
-                                    <div class="form-group-inline">
-                                       
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for wednesday">
-                                        </div>  
-
+                                </div>
+                                <div class="meal-day" data-day="fri">
+                                   <h2>Friday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="fri_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="fri_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="fri_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="fri_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="fri_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
                                     </div>
-                                    <a href="#" class="btn-link add-meal" data-for="3">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day" data-meal-day="4">
-                                <!-- meal-day = 4 is for thursday -->
-                                <form action="#" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="4">
-                                    <div class="form-group-inline">
-                                      
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for thursday">
-                                        </div>  
-
+                                </div>
+                                <div class="meal-day" data-day="sat">
+                                   <h2>Saturday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="sat_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sat_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sat_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sat_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sat_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
                                     </div>
-                                    <a href="#" class="btn-link add-meal" data-for="4">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day" data-meal-day="5">
-                                <!-- meal-day = 5 is for friday-->
-                                <form action="#" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="5">
-                                    <div class="form-group-inline">
-                                      
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for friday">
-                                        </div>  
-
+                                </div>
+                                <div class="meal-day" data-day="sun">
+                                   <h2>Sunday</h2>
+                                   <div class="form-group">
+                                        <input type="text" name="sun_breakfast" id="food_name" class="form-control" placeholder="what's for breakfast">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sun_brunch" id="food_name" class="form-control" placeholder="what's for brunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sun_lunch" id="food_name" class="form-control" placeholder="what's for lunch">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sun_dinner" id="food_name" class="form-control" placeholder="what's for dinner">
+                                    </div>  
+                                    <div class="form-group">
+                                        <input type="text" name="sun_dessert" id="food_name" class="form-control" placeholder="what's for dessert">
                                     </div>
-                                    <a href="#" class="btn-link add-meal" data-for="5">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day" data-meal-day="6">
-                                <!-- meal-day = 6 is for saturday -->
-                                <form action="#" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="6">
-                                    <div class="form-group-inline">
-                                        
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for saturday">
-                                        </div>  
-
-                                    </div>
-                                    <a href="#" class="btn-link add-meal" data-for="6">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
-                            <div class="meal-day" data-meal-day="7">
-                                <!-- meal-day = 7 is for sundary -->
-                                <form action="#" method="post" class="addMeals">
-
-                                    <input type="hidden" name="day" value="7">
-                                    <div class="form-group-inline">
-                                        <div class="form-group">
-                                            <select name="category" id="category" class="form-control">
-                                                <option value="1">Breakfast</option>
-                                                <option value="2">Launch</option>
-                                                <option value="3">Dinner</option>
-                                                <option value="4">Braunch</option>
-                                                <option value="5">Desert</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" name="food_name" id="food_name" class="form-control" placeholder="what is for sunday">
-                                        </div>  
-
-                                    </div>
-                                    <a href="#" class="btn-link add-meal" data-for="7">Add meal </a>
-
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </form>
-                            </div>
+                                </div>
+                                
+                                <!-- <button class="btn-full btn-full-secondary" id="addMeal">Add meal</button> -->
+                                <button class="btn-full btn-full-primary" id="saveBtn">Save</button>
+                            </form>
                         </div>
                         
                         
@@ -259,5 +208,20 @@
 </body>
 </html>
 
+<?php 
+    $db = new Database($db);
+
+    if(count($_POST)){
+        $formData = json_encode($_POST);
+
+        try{
+
+            $db->insert($formData);
+        }catch(PDOException $e){
+            echo $e->getMessage();
+        }
+    }
+?>
+
 <script src="js/main.js"></script>
-<script src="js/form.js"></script>
+

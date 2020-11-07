@@ -181,27 +181,20 @@ a {
 
 .form-group {
   display: block;
-  position: relative; }
-  .form-group-inline {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem; }
+  position: relative;
+  margin-bottom: 1.2rem; }
 
 .form-control {
   padding: .8rem 1rem;
   border-radius: calc(0.5rem / 2);
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-
-form > .add-meal {
-  margin-top: 1rem;
-  display: block; }
-
-form > button[type=submit] {
-  margin-top: 3rem; }
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30%; }
 
 .meal-day {
   display: none; }
+  .meal-day h2 {
+    margin-bottom: 1rem; }
 
 .navbar {
   height: 100px;
